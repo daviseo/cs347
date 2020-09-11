@@ -2,49 +2,42 @@
 
 <head>
 <meta charset="UTF-8"> 
-<title>Task 4</title>
+<title>week1</title>
 
 <style type="text/css">
 
-#k {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
+#p1 {
+    display: block;
+    align: center; 
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     box-sizing: border-box;
+    background-color: coral;
     border: 25px solid red;
 }
-img {
-    display: block;
-    width: 300px;
-    height: 260px;
-    background-size: contain;
+#p2 {
+    display: inline-block;
+    width: 400px;
+    margin: 100;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: coral;
+    border: 25px dotted crimson;
 }
-h1,p {
-    display: inline;
-    margin:0;
+#code {
+    display: inline-block;
+    width: 250px;
+    margin: 100;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: pink;
+    border: 25px dashed black;
 }
 body {
-    margin:0;
+    background-color: darkgoldenrod;
 }
-#l {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    text-align: center;
-    border: 25px solid yellow;
-}
-#m {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    text-align: center;
-    border: 25px solid blue;
-}
-
 
 </style>
 
@@ -52,13 +45,41 @@ body {
 
 <body>
 
-    <figure id="k"> 
-        <h1>K</h1>
-        <p>aren</p>
-        <img src = "" alt = "k is for karen">
+    <figure id="p1"> 
+        <h1>CSS Box Model</h1>
+        <p>The CSS box model provides a way to specify size, position, and more properties 
+           that are important to have control over. Browsers rendering engines treat every 
+           element according to the basic box model, and multiple elements can be grouped 
+           together and treated as a box with it's own properties.</p>
     </figure>
-    <div id="l"> L </div>
-    <div id="m"> M </div>
+
+    <figure id="p2"> 
+        <h1>Important Properties</h1>
+        <p>The content area includes the main text or media, the padding area provides space 
+           between the content and the border, the border area contains the content and padding,
+           and the margin area further seperates this element from others. All of these pieces 
+           can be sized, colored and more. <br><br>I am a box element, here is my CSS formatting! 
+           &#x2192;</p>
+    </figure>
+
+    <figure id="code"> 
+        <h1>Code</h1>
+        <pre>        
+            <code>
+#p2 {
+  display: inline-block;
+  width: 250px;
+  margin: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: coral;
+  border: 25px dotted crimson;
+} 
+            </code>
+        </pre>
+    </figure>
+
+    <br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Source</a>
 
 </body>
 </html>
