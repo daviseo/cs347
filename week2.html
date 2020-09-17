@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>week2</title>
+  <style tpye="css">
+    body {
+      background-color: salmon;
+      text-align: center;
+    }
+    #text {
+        text-align: left;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #p1 {
+        width: 400px;
+    }
+    #p2 {
+        width: 400px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="scary">
+    <h1>JavaScript is scary!</h1>
+  </div>
+
+  <figure id="text">
+    <figure id="p1"><p>
+      JavaScript provides an easy way to modify HTML elements once a webpage
+      is live, like hide elemtns, change element properties, and new elements and more.
+      JavaScript works with functions who are activated when called by some event. 
+      This event could be a a text box, a button (hint hint), or something else.
+    </p></figure>
+    <button onclick="document.getElementById('scary').innerHTML='<h1>JavaScript is not scary!</h1>'">
+        What does this button do?
+    </button>
+    <figure id="p1"><p>
+      Lets not forget about CSS! Using a flex box I have many options for how to layout 
+      elements, and I choose this one! How boring. I choose to stack these elements horrizontally,
+      but i also could have stacked them vertically. A flex box also gives you other options to space 
+      elements, justify them in different locations, and more. Here is the code of my flexbox:
+    </p></figure>
+    <pre>        
+        <code>
+            #text {
+                text-align: left;
+                display: inline-flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        </code>
+    </pre>
+  </figure>
+  <h2>Sources</h2>
+  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>
+  <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
+</body>
