@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>week3</title>
+  <style tpye="css">
+    body {
+      background-color: salmon;
+      display: block;
+      justify-content: left;
+      align-items: center;
+      height: 100vp;
+      margin: 0;
+    }
+    #text {
+      width: 400px;
+      height: 400px;
+      display: center;
+      background-color: brown;
+      padding: 20px;
+      box-sizing: content-box;
+      position: relative;
+    }
+    #p2 {
+      height: 250px;
+      position: absolute;
+      background-color: maroon;
+      padding: 10px;
+      left: 5px;
+      bottom: 5px;
+      right: 5px;
+    }
+    #scary {
+      display: block;
+    }
+    #right{
+      position: absolute;
+      padding: 20px;
+      left: 100%;
+      top: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="scary">
+    <h1>Absolute position</h1>
+  </div><br>
+
+  <div id="text">
+    <p>
+      Boxes with position:static are simply laid out in the order they appear in the html and take up as much 
+      room as they need. This is also the default behavior when no css is applied to html. 
+      The major difference is wether an element is a block box, or a inline box.
+    </p>
+    <div id="p2"><p>
+      Static is not the same as absolute! When someone imagines absolute they often think of it as the 
+      same as static, but they are very different. Static elements find the closest parent with non-static 
+      positioning, and the child is then bound to its parent in some way. For example, this text is positioned
+      to fill 5 pixels from the left, bottom, and right edges of its parent, which is the text above. The code 
+      to the right describes these two blocks of text and how they are related, note the parent is relative,
+      and the child is absolute. But wait! The code and sources to the right are also positioned absolutly to
+      the parent text block, so that they are entirely outside of the block.
+    </p></div>
+    <div id="right">
+    <pre>        
+        <code>
+#text {
+  width: 400px;
+  height: 400px;
+  display: center;
+  background-color: brown;
+  padding: 20px;
+  box-sizing: content-box;
+  position: relative;
+}
+#p2 {
+  height: 250px;
+  position: absolute;
+  background-color: maroon;
+  padding: 10px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+}
+        </code>
+    </pre>
+  <h2>Sources</h2>
+  <a href="https://www.w3schools.com/css/css_positioning.asp#:~:text=An%20element%20with%20position%3A%20absolute,moves%20along%20with%20page%20scrolling.">Absolute</a>
+  </div>
+  </div>
+</body>
+</html>
