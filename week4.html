@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>week4</title>
+  <style tpye="css">
+    #root {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        font-family: sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 10px 5px;
+    }
+    label {
+        justify-self: end;
+    }
+    #text {
+        display: inline-block;
+    }
+    body {
+      background-color: salmon;
+      display: block;
+      justify-content: left;
+      align-items: center;
+      height: 100vp;
+      margin: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>HTML forms</h1>
+
+  <label><input type="radio" name="radio" value="these">these</label>
+  <label><input type="radio" name="radio" value="are">are</label>
+  <label><input type="radio" name="radio" value="radio">radio</label>
+  <label><input type="radio" name="radio" value="buttons">buttons</label>
+  <label><input type="radio" name="radio" value="!">!</label>
+
+  <div id="text">
+    <p>
+        HTML forms are the easiest way for a user to communicate with the website and access further features or options.
+        Forms add the capability of entering data, which can sent to a server to interpret and store, or modify some part of the visible webpage. 
+        For example, adding an item to a list, showing or hiding a feature, and more.
+    </p>
+    <p>
+        A web form's HTML consists of certian controls often refered to as widgets, as well as
+        elements that give structure to the form. These controls include buttons, text fields, 
+        radio buttons, dropdown boxes, checkboxes, and more. These features are mainly achieved
+        through the HTML input tag, although there are other elements that serve more complicated needs.
+    </p>
+    <p>Here is the code for the radio buttons shown above:</p>
+    <pre>        
+        <code>
+&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;these&quot;&gt;these&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;are&quot;&gt;are&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;radio&quot;&gt;radio&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;buttons&quot;&gt;buttons&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio&quot; value=&quot;!&quot;&gt;!&lt;/label&gt;
+        </code>
+    </pre>
+  <h2>Sources</h2>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form">Forms</a>
+  </div>
+</body>
+</html>
